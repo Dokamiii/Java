@@ -8,6 +8,16 @@ import java.util.Scanner;
 
 public class Main {
 
+    public static void main(String [] args) {
+
+        //Calculadora
+        Scanner teclado = new Scanner(System.in);
+        int n1 = teclado.nextInt();
+        int n2 = teclado.nextInt();
+
+        int s = n1 + n2;
+        System.out.println("A soma é: "+ s);
+
     //Desclaração de variaveis
     int idade = 3; //numero real
     float sal = 1825.54f; //
@@ -26,10 +36,8 @@ public class Main {
         Float salario = new Float(1825.54f);
         Character letr = new Character('G');
         Boolean casados = new Boolean(false);
-    */
 
-
-    /* Família | Tipo Primitivo | Classe Involucro(Wrapper) | Tamanho | Exemplo
+    Família | Tipo Primitivo | Classe Involucro(Wrapper) | Tamanho | Exemplo
        Logico      Boolean              Boolean                1 bit     truen
 
 
@@ -46,7 +54,7 @@ public class Main {
       Reais         float               Float                  4 bytes   3.4e^+38
                     double             Double                  8 bytes   1.8ee^+308
 
-    */
+
 
     public static void main(String[] args) {
 
@@ -63,7 +71,7 @@ public class Main {
 
 
 
-        /*Entrada de Dados!
+        Entrada de Dados!
             Scanner teclado = new Scanner(System.in);
             String nome = teclado.nextLine();
             float nota = teclado.nextFloat();
