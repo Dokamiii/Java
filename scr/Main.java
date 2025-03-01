@@ -18,6 +18,10 @@ public class Main {
         int s = n1 + n2;
         System.out.println("A soma é: "+ s);
 
+        String primeiroNome = teclado.nextLine();
+        String sobrenome = teclado.nextLine();
+        System.out.println("meu nome é "+ primeiroNome + sobrenome);
+
     //Desclaração de variaveis
     int idade = 3; //numero real
     float sal = 1825.54f; //
