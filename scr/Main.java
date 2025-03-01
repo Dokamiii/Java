@@ -1,7 +1,6 @@
 package scr;
 
 import java.awt.*;
-import java.sql.SQLOutput;
 import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
@@ -11,15 +10,15 @@ public class Main {
     public static void main(String [] args) {
 
         //Calculadora
-        Scanner teclado = new Scanner(System.in);
-        int n1 = teclado.nextInt();
-        int n2 = teclado.nextInt();
+        Scanner teclado2 = new Scanner(System.in);
+        int n1 = teclado2.nextInt();
+        int n2 = teclado2.nextInt();
 
         int s = n1 + n2;
         System.out.println("A soma é: "+ s);
 
-        String primeiroNome = teclado.nextLine();
-        String sobrenome = teclado.nextLine();
+        String primeiroNome = teclado2.nextLine();
+        String sobrenome = teclado2.nextLine();
         System.out.println("meu nome é "+ primeiroNome + sobrenome);
 
     //Desclaração de variaveis
@@ -33,15 +32,15 @@ public class Main {
     float sala = 1825.54f;
     char letras = (char) 'G';
     boolean casada = (boolean) false;
+    
 
-
-    /*Wrapper Class
+    /* Wrapper Class
         Integer years = new Integer(3);
         Float salario = new Float(1825.54f);
         Character letr = new Character('G');
         Boolean casados = new Boolean(false);
-
-    Família | Tipo Primitivo | Classe Involucro(Wrapper) | Tamanho | Exemplo
+        
+     Família | Tipo Primitivo | Classe Involucro(Wrapper) | Tamanho | Exemplo
        Logico      Boolean              Boolean                1 bit     truen
 
 
@@ -58,12 +57,12 @@ public class Main {
       Reais         float               Float                  4 bytes   3.4e^+38
                     double             Double                  8 bytes   1.8ee^+308
 
+            */
 
-
-    public static void main(String[] args) {
+    
 
         //Converte variaveis atravaes de classe involucro(wrapper class)
-        int idade = 30;
+        int idade2 = 30;
         String valor = Integer.toString(idade);
         System.out.println(valor);
 
@@ -75,20 +74,19 @@ public class Main {
 
 
 
-        Entrada de Dados!
+        //Entrada de Dados!
             Scanner teclado = new Scanner(System.in);
             String nome = teclado.nextLine();
             float nota = teclado.nextFloat();
-            int idade = teclado.nextInt();
             float salario = teclado.nextFloat();
 
 
-        Saida de dados!
+        //Saida de dados!
             System.out.println("sua nota é " + nota);
             System.out.printf("A nota de %s é %.2f \n", nome, nota);
             System.out.format("A nota de %s é %.2f \n", nome, nota);
 
-        Codigo para mostrar a hora a linguagem e resolução do PC!
+        //Codigo para mostrar a hora a linguagem e resolução do PC!
             System.out.println("Olá mundo");
             Date relogio = new Date();
             System.out.println("A hora do sistema é ");
@@ -101,8 +99,10 @@ public class Main {
             Dimension d = tk.getScreenSize();
             System.out.println("Screen width = " + d.width);
             System.out.println("Screen height = " + d.height);
-            */
+            
     }
 
+
+    
 
 }

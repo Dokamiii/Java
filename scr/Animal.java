@@ -3,26 +3,39 @@ package scr;
 
 public class Animal {
     //Atributos
-    String nome;
-    int idade;
-    String sex;
+    private String nome;
+    private int idade;
+    private String genero;
 
-    //metodos
-    void correr(int aceleracao) {
-        idade += aceleracao;
+    public String getNome(){
+        return nome;
     }
 
-    void pular(){
+    public String setNome(){
+        return nome;
+    }
+
+    //metodos
+    public int correr(int aceleracao) {
+        aceleracao += idade;
+        return aceleracao;
+    }
+
+    public void pular(){
 
     }
     
     //classe
-    public class cachorro {
-        String latir;
+    public class Cachorro {
+        void latir () {
+
+        }
     }
 
-    class gato {
-        String miar;
+    class Gato {
+        void miar () {
+
+        }
     }
 
     public static void main(String[] args) {
@@ -31,16 +44,15 @@ public class Animal {
 
         //chamando os atributos
         animal.nome = "Mongu";
-        animal.sex = "Masculino";
+        animal.genero = "Masculino";
         animal.idade = 5;
 
         //chamando o metodo
-        animal.correr(10);
-        System.err.println(animal.correr);
+        System.err.println("o animal esta correndo a " + animal.correr(10) + " Km/h");
 
         Animal animal2 = new Animal();
         animal2.nome = "Kiara";
-        animal2.sex = "Femea";
+        animal2.genero = "Femea";
         animal2.idade = 5;
 
         System.out.println("o nome do Pet: " + animal.nome + ", Ele tem apenas " + animal.idade + " meses");
