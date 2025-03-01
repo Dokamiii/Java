@@ -1,12 +1,11 @@
-package restaurante.cadastrocliente;
+package restaurante.caixa.cadastrocliente;
 
-public class Cliente {
-
+public class Pessoa {
     private String nomeCompleto;
     private String cpf;
     private String numeroTelefone;
 
-    public Cliente(String nomeCompleto, String cpf, String numeroTelefone) {
+    public Pessoa(String nomeCompleto, String cpf, String numeroTelefone) {
         this.nomeCompleto = nomeCompleto;
         this.cpf = cpf;
         this.numeroTelefone = numeroTelefone;
@@ -35,5 +34,4 @@ public class Cliente {
     public void setNumeroTelefone(String numeroTelefone) {
         this.numeroTelefone = numeroTelefone;
     }
-
 }

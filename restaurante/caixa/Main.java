@@ -1,7 +1,7 @@
-package restaurante;
+package restaurante.caixa;
 
 import java.util.Scanner;
-import restaurante.cadastrocliente.Cliente;
+import restaurante.caixa.cadastrocliente.Cliente;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class Main {
 
         System.out.println("Digite o numero de telefone: ");
         String numeroTelefone = teclado.nextLine();
-
+     
         Cliente cliente = new Cliente(nomeCompleto, cpf, numeroTelefone);
 
         System.out.println("Nome Completo: " + cliente.getNomeCompleto());
