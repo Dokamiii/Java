@@ -15,6 +15,22 @@ public class Animal {
         return nome;
     }
 
+    public int getIdade(){
+        return idade;
+    }
+
+    public void setIdade(int newIdade){
+        idade = newIdade;
+    }
+
+    public String getGenero(){
+        return genero;
+    }
+
+    public String setGenero(){
+        return genero;
+    }
+
     //metodos
     public int correr(int aceleracao) {
         aceleracao += idade;
@@ -28,13 +44,11 @@ public class Animal {
     //classe
     public class Cachorro {
         void latir () {
-
         }
     }
 
     class Gato {
         void miar () {
-
         }
     }
 
