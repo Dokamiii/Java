@@ -13,9 +13,11 @@ public class Main {
         System.out.println("Digite o segundo nome");
         String segundoNome = teclado.nextLine();
         String nomeCompleto = primeiroNome + " " + segundoNome;
-
-        System.out.println("Digite o CPF");
-        String cpf = teclado.nextLine();
+        
+        do { 
+            System.out.println("Digite o CPF");
+            String cpf = teclado.nextLine();            
+        } while (false);
 
         System.out.println("Digite o numero de telefone: ");
         String numeroTelefone = teclado.nextLine();
