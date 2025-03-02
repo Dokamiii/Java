@@ -13,14 +13,32 @@ public class Main {
         System.out.println("Digite o segundo nome");
         String segundoNome = teclado.nextLine();
         String nomeCompleto = primeiroNome + " " + segundoNome;
-        
+
+        String cpf;
+        boolean cpfValido;
         do { 
             System.out.println("Digite o CPF");
-            String cpf = teclado.nextLine();            
-        } while (false);
+            cpf = teclado.nextLine();
+            
+            cpfValido =!cpf.matches("\\d{10,11}");
 
-        System.out.println("Digite o numero de telefone: ");
-        String numeroTelefone = teclado.nextLine();
+            if(!cpfValido){
+                System.out.println("CPF invalido!");
+            }
+        } while (!cpfValido);
+
+        String numeroTelefone;
+        boolean telefoneValido;
+        do {
+            System.out.println("Digite o numero de telefone: ");
+            numeroTelefone = teclado.nextLine();
+
+            telefoneValido = numeroTelefone.matches("\\d{11,13}");
+            if(!telefoneValido){
+                System.out.println("Número de telefone invalido!");
+
+            } 
+            } while (!telefoneValido);
      
         Cliente cliente = new Cliente(nomeCompleto, cpf, numeroTelefone);
 
