@@ -5,6 +5,7 @@ import restaurante.caixa.cadastrocliente.Cliente;
 
 public class Main {
     public static void main(String[] args) {
+        String [] palavroes;
         Scanner teclado = new Scanner(System.in);
 
         System.out.println("Digite o primeiro nome");
